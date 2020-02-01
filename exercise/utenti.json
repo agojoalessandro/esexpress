@@ -1,0 +1,48 @@
+{
+    "utenti": [  {
+        "name":"Marcela",
+        "surname":"Valachovič",
+        "gender":"female",
+        "region":"Slovakia",
+        "age":28,
+        "title":"ms",
+        "phone":"(302) 195 3860",
+        "birthday": {
+            "dmy":"04\/06\/1992",
+            "mdy":"06\/04\/1992",
+            "raw":707632127
+                    },
+        "email":"marcela-92@example.com",
+        "password":"Valachovič92++",
+        "creditcard": {
+            "expiration":"5\/27",
+            "number":"1003-9754-1445-1607",
+            "pin":2305,
+            "security":574}
+            },
+        
+        {
+        "name":"Paraschiva",
+        "surname":"Frățilă",
+        "gender":"female",
+        "region":"Romania",
+        "age":23,
+        "title":"ms",
+        "phone":"(745) 304 9766",
+        "birthday": {
+            "dmy":"28\/04\/1997",
+            "mdy":"04\/28\/1997",
+            "raw":862259914
+                    },
+        "email":"paraschiva97@example.com",
+        "password":"Frățilă97",
+        "creditcard": {
+            "expiration":"3\/26",
+            "number":"5871-7450-1599-9895",
+            "pin":6664,
+            "security":558}
+            }  
+
+    ]
+        
+}
