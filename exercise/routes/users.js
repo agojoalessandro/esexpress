@@ -2,8 +2,8 @@
 var express = require('express');
 var router = express.Router();
 const fs = require('fs');
+var f = require('../utenti.json');
 var faker = require('faker');
-
 
 
 
@@ -39,10 +39,10 @@ function createUtenti()
 }
 /* GET users listing. */
 router.get('/', function(req, res, next) {
- res.send(createUtenti());
+ res.send(f);
 });
 
-/*router.get('/generate', function(req, res, next) {
+router.get('/generate', function(req, res, next) {
    let usersarray = []; //new Array()
     for (let index = 0; index < 2; index++) {
         usersarray.push(createUtenti());
@@ -51,10 +51,10 @@ router.get('/', function(req, res, next) {
 
     let formato = { utenti : usersarray};
 
-    //let data = JSON.stringify(formato);
+    let data = JSON.stringify(formato);
    // fs.writeFileSync('utenti.json', data);
     
     res.send(usersarray);
 });
-*/
+
 module.exports = router;
