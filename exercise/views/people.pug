@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Name : #{utente.name}
+  p Surname : #{utente.surname}
+  p Gender : #{utente.gender}
+  p Region: #{utente.region}
+  p Age : #{utente.age}
+  p title : #{utente.title}
+  p phone : #{utente.phone}
+  p Birthday - dmy: #{utente.card.birthday[0].dmy}
+  p Birthday - mdy: #{utente.card.birthday[1].mdy}
+  p Birthday - raw: #{utente.card.birthday[3].raw}
+  p Mail : #{utente.email}
+  p Password: #{utente.password}
+  p Creditcard - expiration: #{utente.card.creditcard[0].expiration}
+  p Creditcard - number: #{utente.card.creditcard[1].number}
+  p Creditcard - pin: #{utente.card.creditcard[2].pin}
+  p Creditcard - security: #{utente.card.creditcard[3].security}
+  //img(src='https://americanfoodshop.it/wp-content/uploads/2018/04/coca-cola-peach.jpg')

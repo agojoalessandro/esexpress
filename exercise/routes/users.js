@@ -54,7 +54,7 @@ router.get('/generate', function(req, res, next) {
     let data = JSON.stringify(formato);
    // fs.writeFileSync('utenti.json', data);
     
-    res.send(usersarray);
+    res.send(f);
 });
 
 module.exports = router;
